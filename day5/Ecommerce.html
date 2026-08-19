@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .parent{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+            gap: 30px;
+        }
+          
+
+        .products{
+            border: 1px solid black;
+            height: 350px;
+            text-align: center;
+            padding: 12px;
+
+            margin-bottom: 15px;
+            border-radius: 15px;
+
+            box-shadow: 4px 4px 8px black;
+        }
+
+        .products:hover{
+            background-color: #ff0000;
+            color: white;
+            transform: scale(1.03);
+
+            transition: 2s;
+        }
+
+        .products img{
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .products button{
+            background-color: orange;
+            border: none;
+            padding: 10px;
+            border-radius: 15px;
+            width: 90%;
+        }
+
+        .products p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 24px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+   <div class="parent">
+
+    <div class="products">
+        <img src="https://images.pexels.com/photos/8356854/pexels-photo-8356854.jpeg">
+        <h2>Headphone</h2>
+        <p>Rs 2,499</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="products">
+        <img src="https://images.pexels.com/photos/11129922/pexels-photo-11129922.jpeg"  >
+        <h2>Laptop</h2>
+        <p>Rs 40,000</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="products">
+        <img src="https://images.pexels.com/photos/38914242/pexels-photo-38914242.jpeg"  >
+        <h2>Shoes</h2>
+        <p>Rs 5,000</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="products">
+        <img src="https://images.pexels.com/photos/11129922/pexels-photo-11129922.jpeg"  >
+        <h2>Laptop</h2>
+        <p>Rs 40,000</p>
+        <button>Buy Now</button>
+    </div>
+
+     <div class="products">
+        <img src="https://images.pexels.com/photos/8356854/pexels-photo-8356854.jpeg">
+        <h2>Headphone</h2>
+        <p>Rs 2,499</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="products">
+        <img src="https://images.pexels.com/photos/11129922/pexels-photo-11129922.jpeg"  >
+        <h2>Laptop</h2>
+        <p>Rs 40,000</p>
+        <button>Buy Now</button>
+    </div>
+
+</div>
+</body>
+</html>
