@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Tempalate String - text and variable 
+
+        // ${varible/Parameter}
+
+        let name = "john"
+        let age = 18
+
+        console.log("Hii my name is " + name + "My Age is " + age + "Have a good day")
+
+
+        //Template ``
+        console.log(`
+        Dear ${name}
+        
+        Hello How are you doing , I am ${age} years old.
+        have a good day
+        `)
+
+
+        //Arrow - short cut to funcion  =>
+
+     let greet =  ()=>{
+            console.log("Hii I am Arrow function")
+        }
+
+        greet()
+
+
+        //setTimeout - Timer to function 1000 - 1s
+
+        // setTimeout(()=>{
+        //      alert('HIi I am Pop up Notification')
+        // },5000)
+
+
+        // setInterval(()=>{
+        //          console.log("Running After every 2 seconds")
+        // },2000)
+    </script>
+</body>
+</html>
