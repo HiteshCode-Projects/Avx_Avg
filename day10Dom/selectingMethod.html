@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myp">Hello I am Paragraph</p>
+
+    <div class="box">This is Div - 0</div>
+    <div class="box">This is Div - 1</div>
+
+    <p>This is Second Paragraph</p>
+    <p>This is Third Paragpraph</p>
+
+    <script>
+
+           //select Method . document - webpage . Element = tag
+
+        const p =  document.getElementById("myp")  //Paragpagh Tag has been selected in js
+        console.log(p)
+
+        console.log(p.textContent)
+
+        const container =     document.getElementsByClassName("box")
+        console.log(container)
+        console.log(container[0])
+        console.log(container[0].textContent)
+
+        const paragpahtags  =     document.getElementsByTagName("p")
+        console.log(paragpahtags)
+
+
+    </script>
+</body>
+</html>

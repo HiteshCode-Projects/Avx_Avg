@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="myh">Good Morning Have a Great Day</h2>
+
+    <button onclick="Greeting()">Greet</button>
+
+
+    <div id="mydiv">This is Div</div>
+    <button onclick="UpdateTag()">Updated</button>
+
+    <p id="myp">This is Old Dull Paragaph</p>
+    <button onclick="changeStyle()">Change Style</button>
+
+    <script>
+      function Greeting(){
+
+        const heading = document.getElementById("myh")
+
+       // console.log(heading)
+       heading.textContent = "Welcome To JS DOM"
+
+
+      }
+
+      function UpdateTag(){
+        const divc = document.getElementById("mydiv")
+
+        // divc.innerHTML = "<p>Hello I am New Paragaph</p>"
+
+        divc.innerHTML = `
+
+        <p>Hello Paragpag</p>
+        <button>New Button</button>
+        <h2>Heading tag</h2>
+        
+        `
+    
+    }
+
+    function changeStyle(){
+        const p = document.getElementById("myp")
+
+        p.style.color = "red"
+        p.style.backgroundColor = "black"
+        p.style.textAlign = "center"
+        p.textContent = "This is New Paragaph"
+    }
+    </script>
+</body>
+</html>
