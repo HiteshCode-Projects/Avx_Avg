@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mydiv{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            overflow: auto;
+        }
+
+        .content{
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <input id="myinput" placeholder="Type search...">
+
+    <div id="mydiv">
+        <div class="content">Scroll Inside Me</div>
+    </div>
+
+    <script>
+
+        const input = document.getElementById("myinput")
+        const div = document.getElementById("mydiv")
+
+
+        //Mouseover
+               div.addEventListener('mouseover', function(){
+                div.style.backgroundColor = "red"
+               })
+
+
+
+        //Mouseout
+        div.addEventListener('mouseout', function(){
+                div.style.backgroundColor = "green"
+               })
+
+          div.addEventListener('scroll', function(){
+            console.log('Scrolled')
+          })     
+
+        //Keyboard
+        // //Keyup - Key Released - Output   
+        // input.addEventListener('keyup' , function(x){
+        //     console.log('Key Released ', x.key)
+        // })
+
+
+        //  //Keydown - Key Pressed - Output   
+        // input.addEventListener('keydown' , function(e){
+        //     console.log('Key Pressed ', e.key)
+        // })
+
+            //Keydown - Key Pressed - Output   
+        input.addEventListener('change' , function(p){
+            console.log('Change of Value in Input ', p.target.value)
+        })
+
+
+
+    </script>
+</body>
+</html>
