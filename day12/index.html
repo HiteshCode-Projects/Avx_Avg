@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <img id="cat"> 
+
+
+
+    <script>
+        // https:randomuser.me/api
+
+        //Data needs converted into json()
+
+        // fetch('https:randomuser.me/api')
+
+        // //succesfull
+        // .then(response => response.json() )
+
+        // .then(data => console.log(data.results))
+       
+
+        // //unsuccessfull
+        // .catch( function(err){
+        //         console.log(' Error connection ' , err)
+        // }  )
+
+
+
+
+        fetch('https://api.thecatapi.com/v1/images/search')
+
+        //succesfull
+        .then(response => response.json() )
+
+        .then(data => console.log(data[0].url))
+       
+
+        //unsuccessfull
+        .catch( function(err){
+                console.log(' Error connection ' , err)
+        }  )
+    </script>
+</body>
+</html>
